@@ -13,18 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create(
-            'quotes',
-            function (Blueprint $table) {
-                $table->id();
-                $table->text('quote');
-                $table->string('historian');
-                $table->string('year');
-                $table->timestamps();
-            }
-        );
+        Schema::create('quotes', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
+        });
     }
-
 
     /**
      * Reverse the migrations.
