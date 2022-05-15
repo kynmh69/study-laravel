@@ -4,7 +4,6 @@ services:
   database:
     image: postgres
     container_name: database
-    restart: unless-stopped
     environment:
       POSTGRES_PASSWORD: secret
       POSTGRES_DB: laravel_docker
